@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Project | EvoAxis</title>
+
+    <link rel="stylesheet" href="css/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <img src="assets/logo.png" class="logo" alt="EvoAxis Logo">
+
+        <h1>Start Your Project</h1>
+
+        <p class="subtitle">
+            Tell us about your business and we'll get back to you within 24 hours.
+        </p>
+
+        <form id="contactForm">
+
+            <div class="input-group">
+                <label>Full Name *</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Business Name</label>
+                <input type="text" id="business">
+            </div>
+
+            <div class="input-group">
+                <label>Email Address *</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone / WhatsApp *</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="input-group">
+                <label>Service Required *</label>
+
+                <select id="service" required>
+                    <option value="">Choose a Service</option>
+                    <option>Smart BusinessWebsite</option>
+                    <option>Custom Software</option>
+                    <option>Digital Transformation</option>
+                    <option>Website Redesign</option>
+                    <option>AI Customer Assistant</option>
+                </select>
+
+            </div>
+
+            
+
+            <div class="input-group">
+                <label>Project Details *</label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    maxlength="500"
+                    placeholder="Describe your business, goals, timeline or anything you'd like us to know..."
+                    required></textarea>
+
+                <small id="counter">0 / 500</small>
+
+            </div>
+
+            <div class="checkbox">
+
+                <input type="checkbox" id="agree" required>
+
+                <label for="agree">
+                    I agree that EvoAxis may contact me regarding my enquiry.
+                </label>
+
+            </div>
+
+            <button type="submit" id="submitBtn">
+
+                🚀 Send Project Enquiry
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+<script src="js/config.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#6C63FF,#A855F7,#EC4899);
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.card{
+
+    width:100%;
+    max-width:700px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    color:white;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.2);
+
+}
+
+.logo{
+
+    width:150px;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-size:38px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    margin-top:10px;
+
+    margin-bottom:35px;
+
+    opacity:.9;
+
+}
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.9);
+
+    font-size:16px;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+}
+
+small{
+
+    display:block;
+
+    text-align:right;
+
+    margin-top:6px;
+
+    opacity:.8;
+
+}
+
+.checkbox{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:flex-start;
+
+    margin-bottom:25px;
+
+}
+
+.checkbox input{
+
+    width:18px;
+    height:18px;
+    margin-top:3px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:#6C63FF;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+padding:30px;
+
+}
+
+h1{
+
+font-size:30px;
+
+}
+
+}
+/* Tablets */
+@media (max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .card{
+        padding:30px 22px;
+        border-radius:20px;
+    }
+
+    .logo{
+        width:120px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .subtitle{
+        font-size:15px;
+    }
+
+    input,
+    select,
+    textarea{
+        padding:15px;
+        font-size:16px;
+    }
+
+    button{
+        min-height:54px;
+        font-size:17px;
+    }
+
+}
+
+/* Small Phones */
+@media (max-width:480px){
+
+    body{
+        padding:15px;
+    }
+
+    .card{
+        padding:22px 18px;
+        border-radius:18px;
+    }
+
+    .logo{
+        width:95px;
+    }
+
+    h1{
+        font-size:26px;
+    }
+
+    .subtitle{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    label{
+        font-size:14px;
+    }
+
+    input,
+    select,
+    textarea{
+        padding:14px;
+        font-size:16px;
+    }
+
+    textarea{
+        min-height:140px;
+    }
+
+    button{
+        font-size:16px;
+        min-height:52px;
+    }
+
+}
