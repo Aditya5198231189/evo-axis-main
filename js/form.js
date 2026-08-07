@@ -20,13 +20,16 @@ form.addEventListener("submit", async (e) => {
 
   // Create Form Data
   const formData = {
-    name: document.getElementById("name").value.trim(),
-    business: document.getElementById("business").value.trim(),
-    email: document.getElementById("email").value.trim(),
-    phone: document.getElementById("phone").value.trim(),
-    service: document.getElementById("service").value,
-    message: document.getElementById("message").value.trim()
-  };
+  name: document.getElementById("name").value.trim(),
+  business: document.getElementById("business").value.trim(),
+  email: document.getElementById("email").value.trim(),
+  phone: document.getElementById("phone").value.trim(),
+  service: document.getElementById("service").value,
+  message: document.getElementById("message").value.trim(),
+
+  affiliateId: document.getElementById("affiliateId").value.trim(),
+  affiliatePhone: document.getElementById("affiliatePhone").value.trim()
+};
 
   try {
 
